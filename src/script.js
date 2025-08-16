@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=>{
+    require("dotenv").config();
     const search_btn = document.getElementById("city-btn");
     const city_input = document.getElementById("city-input");
     const error_message = document.getElementById("error-message");
@@ -6,7 +7,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const city_name = document.getElementById("city-name");
     const temp = document.getElementById("temp");
     const desc = document.getElementById("desc");
-    const API_KEY = "9abfde9693c41534854d8e169deb7aa7";
+    const api_Key = process.env.API_KEY;
 
     search_btn.addEventListener("click",async ()=>{
 
