@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-900 min-h-screen flex justify-center	items-center">
+<div class="border-2 bg-zinc-800 rounded-lg shadow-2xl" >
+    <h1 class="text-white text-3xl font-bold flex justify-center m-4">Weather app</h1>
+    
+    <div id = "input-container" class=" p-4   rounded-lg"> 
+        <input type="text" placeholder="search . . ." id ="city-input" class=" text-white bg-zinc-700 p-5 rounded-lg outline-none m-3">
+        <button id="city-btn" class ="bg-purple-500 p-4 rounded-lg text-white transition duration-700 ease-in-out shadow-2xl hover:bg-purple-800 m-3">Get Weather</button>
+    </div>
+    <div id ="weather-info" class="hidden">
+        <h2 id="city-name">london</h2>
+        <p id="temp"></p>
+        <p id="desc"></p>
+    </div>
+    <p id="error-message" class="hidden text-red font-bold">City not found try again</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
